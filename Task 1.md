@@ -1,12 +1,14 @@
 # Task1
 
 A prerequisite for this task a copy of data collector server is needed, open a terminal and execute the following command:
+
 ```git clone https://git.swarmlab.io:3000/docs/Documentation```
 
 
 Start the data collector server with the following command:
 
 ```./build.sh network-scanning```
+
 
 Output:
 ```
@@ -66,7 +68,9 @@ Hit CTRL-C to stop the server
 
 The DDOS attack will target the 172.17.0.2:8080 ip:port.
 Open a terminal and start a tcpdump to locate the attack with the following command:
+
 ```sudo tcpdump```
+
 Output(after attack):
 ```
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
@@ -92,9 +96,11 @@ listening on veth737dcab, link-type EN10MB (Ethernet), capture size 262144 bytes
 ```
 
 Open a third terminal and launch the DDOS attack with the following command:
+
 ```sudo hping3 -S 172.17.0.2 -p 8080```
 
 Output:
+
 ```
 HPING 172.17.0.2 (docker0 172.17.0.2): S set, 40 headers + 0 data bytes
 len=44 ip=172.17.0.2 ttl=64 DF id=0 sport=8080 flags=SA seq=0 win=64240 rtt=8.1 ms
