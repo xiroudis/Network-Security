@@ -1,4 +1,4 @@
-# Task1
+# Task 1
 
 A prerequisite for this task a copy of data collector server is needed, open a terminal and execute the following command:
 
